@@ -13,6 +13,7 @@ html {
 	scroll-behavior: smooth;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+// NAV
 .nav {
 	width: 100%;
 	height: 12vh;
@@ -27,7 +28,6 @@ html {
 		font-size: 2.8rem;
 		word-spacing: 0.2em;
 		letter-spacing: 0.1em;
-
 		cursor: pointer;
 		a {
 			text-decoration: none;
@@ -53,13 +53,103 @@ html {
 			transition: 0.3s;
 			&:hover {
 				color: $hover-color;
-				transform: scale(1.2); /* Powiększa tylko link, na który jest hover */
+				transform: scale(1.2);
+			}
+		}
+		&__mobile {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			flex-direction: column;
+			position: fixed;
+			list-style: none;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			transition: 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+			transform: translateY(-100%);
+			background: linear-gradient(
+				159deg,
+				rgba(0, 222, 230, 1) 0%,
+				rgba(82, 223, 228, 1) 22%,
+				rgba(32, 186, 178, 1) 100%
+			);
+			a {
+				display: block;
+				text-decoration: none;
+				transition: 0.3s;
+				&:hover {
+					color: $hover-color;
+					transform: scale(1.3);
+				}
+			}
+			.close {
+				position: absolute;
+				top: 0;
+				right: 0;
+				padding: 50px 60px;
+				font-size: 3rem;
+				cursor: pointer;
+				color: $dark;
+				transition: 1s ease-in-out;
+
+				&:hover {
+					transform: rotate(360deg);
+				}
+			}
+
+			&-active {
+				transform: translateY(0);
 			}
 		}
 	}
+	.burger {
+		display: none;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: column;
+		width: 4%;
+		height: 110%;
+		border: 2.5px solid $dark;
+		border-radius: 7px;
+		cursor: pointer;
+
+		&__line {
+			width: 75%;
+			height: 10%;
+			background-color: $dark;
+			border-radius: 15px;
+			&-second {
+				width: 50%;
+				height: 10%;
+				background-color: $dark;
+				transition: width ease-in-out 0.4s;
+				border-radius: 15px;
+			}
+			&-third {
+				width: 30%;
+				height: 10%;
+				background-color: $dark;
+				transition: width ease-in-out 0.4s;
+				border-radius: 15px;
+				transition-delay: 0.1s;
+			}
+		}
+		&:hover .burger__line {
+			background-color: $hover-color;
+		}
+		&:hover .burger__line-second,
+		&:hover .burger__line-third {
+			width: 75%;
+			background-color: $hover-color;
+		}
+	}
 }
+@keyframes MobileMenu {
+}
+// HEADER
 .header {
-	
 	height: 88vh;
 	background-image: url('../img/main-big.jpg');
 	background-position: center;
@@ -95,15 +185,51 @@ html {
 		}
 	}
 }
+// tylko do menu !!!!
+@media (max-width: 768px) {
+	.nav {
+		padding-left: 2em;
+		padding-right: 2em;
+		&__links {
+			display: none;
+		}
+		.burger {
+			display: flex;
+			height: 160%;
+			width: 7%;
+		}
+	}
+	.header {
+		&__text {
+			padding: 13em 0 0 3em;
+			width: 75%;
+			h1 {
+				font-size: 3.2rem;
+			}
+			p {
+				margin-top: 0.2em;
+				font-size: 2.2rem;
+				margin-bottom: 0.6em;
+			}
+			&-btn {
+				padding: 7px 20px;
+
+				font-size: 2rem;
+			}
+		}
+	}
+}
+@media (min-width: 425px) {
+}
+@media (min-width: 992px) {
+}
 @media (min-width: 1440px) {
-	.header{
+	.header {
 		max-height: 46vh;
 	}
 }
 @media (min-width: 2000px) {
-	.header{
+	.header {
 		max-height: 40vh;
 	}
-}
-@media (min-width: 992px) {
 }
