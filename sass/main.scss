@@ -8,4 +8,91 @@
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav {
+	width: 100%;
+	height: 12vh;
+	background-color: #23D2D5;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 2.8rem;
+	padding: 1em;
+
+	&__logo {
+		font-size: 2.8rem;
+		word-spacing: 0.2em;
+		letter-spacing: 0.1em;
+		color: black;
+		cursor: pointer;
+		a {
+			text-decoration: none;
+			color: black;
+		}
+		&-img {
+			color: rgb(26, 207, 220);
+			font-size: 3rem;
+		}
+	}
+	&__links {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		font-size: 2.6rem;
+		width: 68%;
+
+		a {
+			text-decoration: none;
+			color: black;
+			cursor: pointer;
+			overflow: hidden;
+			transition: 0.3s;
+			&:hover {
+				color: green;
+				transform: scale(1.2); /* Powiększa tylko link, na który jest hover */
+			}
+		}
+	}
+}
+.header {
+	width: 100%;
+	height: 88vh;
+	background-color: red;
+	&__img {
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+		background-image: url('../img/main-big.jpg');
+	}
+	&__text {
+		padding: 22em 0 0 5em;
+		width: 40%;
+		color: rgb(237, 236, 236);
+		h1 {
+			font-size: 5rem;
+			letter-spacing: 0.05em;
+		}
+		p {
+			font-size: 2.5rem;
+			margin-bottom: 1em;
+		}
+		&-btn {
+			padding: 5px 20px;
+			border-radius: 10px;
+			border: none;
+			font-size: 2.5rem;
+			background-color: rgb(0, 255, 110);
+			color: rgb(237, 236, 236);
+			transition: ease-out 0.5s;
+
+			&:hover {
+				color: white;
+				box-shadow: inset 0 -100px 0 0 #725ac1;
+			}
+			&:active {
+				transform: scale(0.9);
+			}
+		}
+	}
 }
