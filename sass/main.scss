@@ -9,9 +9,12 @@
 }
 html {
 	font-size: 62.5%;
-	background-color: $main-color;
+
 	scroll-behavior: smooth;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+	background-color: white;
 }
 // NAV
 .nav {
@@ -20,7 +23,7 @@ html {
 	background-color: $main-color;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	font-size: 2.8rem;
 	padding: 1em;
 
@@ -124,6 +127,11 @@ html {
 			transform-origin: center;
 		}
 	}
+	.wrapper {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
 }
 
 // HEADER
@@ -133,13 +141,15 @@ html {
 	background-position: center;
 	background-size: cover;
 	display: flex;
-	align-items: flex-start;
+
+	align-items: flex-end;
 	flex-direction: column;
-	gap: 200px;
+
 	// &__spacer {
 	// 	height: 20vh;
 	// }
 	&__text {
+		justify-content: flex-start;
 		padding-left: 6em;
 		margin-top: 19vh;
 		width: 45%;
@@ -173,19 +183,21 @@ html {
 // MEDIA
 @media (max-width: 768px) {
 	.nav {
+		padding: 0em;
 		&__logo {
 			font-size: 2.5rem;
 			word-spacing: 0.1em;
 		}
-		padding-left: 2em;
-		padding-right: 2em;
+
 		&__links {
 			display: none;
 		}
 		.burger {
 			display: flex;
-			height: 6.3vh;
-			width: 6vw;
+		}
+		.wrapper {
+			justify-content: space-between;
+			padding: 0 1em 0 1em;
 		}
 	}
 	.header {
@@ -209,38 +221,63 @@ html {
 }
 @media (max-width: 425px) {
 	.nav {
-		padding-left: 1em;
-		padding-right: 1em;
+		padding: 0em;
 		&__logo {
 			font-size: 2.3rem;
+			&-img {
+				font-size: 2.8rem;
+			}
 		}
-
 		.burger {
 			display: flex;
-			height: 6vh;
-			width: 9vw;
+			font-size: 2.8rem;
+		}
+	}
+	.header {
+		&__text {
+			padding-left: 3em;
+		}
+	}
+}
+@media (max-width: 375px) {
+	.nav {
+		&__logo {
+			&-img {
+				font-size: 2.5rem;
+			}
+		}
+		.burger {
+			display: flex;
+			font-size: 2.5rem;
+		}
+	}
+	.header {
+		&__text {
+			padding-left: 2em;
 		}
 	}
 }
 @media (max-width: 320px) {
 	.nav {
-		padding-left: 0.8em;
-		padding-right: 0.8em;
+		padding: 0em;
+		// padding-left: 0.8em;
+		// padding-right: 0.8em;
 		&__logo {
 			font-size: 2.1rem;
 			word-spacing: 0;
 			&-img {
-				font-size: 2rem;
+				font-size: 2.5rem;
 			}
 		}
 		.burger {
-			height: 5vh;
-			width: 9vw;
+			display: flex;
+			font-size: 2.5rem;
 		}
 	}
 
 	.header {
 		&__text {
+			padding-left: 3em;
 			h1 {
 				font-size: 2.5rem;
 			}
@@ -259,13 +296,33 @@ html {
 
 @media (min-width: 992px) {
 }
-// @media (min-width: 1440px) {
-// 	.header {
-// 		height: 46vh;
-// 	}
-// }
-// @media (min-width: 2000px) {
-// 	.header {
-// 		height: 40vh;
-// 	}
-// }
+
+@media (min-width: 2000px) {
+	.header {
+		height: 40vh;
+		&__text {
+			margin-top: 14vh;
+			h1 {
+				font-size: 5rem;
+			}
+			p {
+				font-size: 3rem;
+			}
+			&-btn {
+				font-size: 3rem;
+			}
+		}
+	}
+	.nav {
+		&__logo {
+			font-size: 4rem;
+
+			&-img {
+				font-size: 4rem;
+			}
+		}
+		&__links {
+			font-size: 3.8rem;
+		}
+	}
+}

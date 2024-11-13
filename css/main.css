@@ -14,9 +14,12 @@
 
 html {
   font-size: 62.5%;
-  background-color: #00dee6;
   scroll-behavior: smooth;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: white;
 }
 
 .nav {
@@ -25,7 +28,7 @@ html {
   background-color: #00dee6;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 2.8rem;
   padding: 1em;
 }
@@ -119,6 +122,11 @@ html {
   transform: rotate(90deg);
   transform-origin: center;
 }
+.nav .wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
 .header {
   height: 88vh;
@@ -126,11 +134,11 @@ html {
   background-position: center;
   background-size: cover;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   flex-direction: column;
-  gap: 200px;
 }
 .header__text {
+  justify-content: flex-start;
   padding-left: 6em;
   margin-top: 19vh;
   width: 45%;
@@ -162,8 +170,7 @@ html {
 
 @media (max-width: 768px) {
   .nav {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding: 0em;
   }
   .nav__logo {
     font-size: 2.5rem;
@@ -174,8 +181,10 @@ html {
   }
   .nav .burger {
     display: flex;
-    height: 6.3vh;
-    width: 6vw;
+  }
+  .nav .wrapper {
+    justify-content: space-between;
+    padding: 0 1em 0 1em;
   }
   .header__text {
     width: 75%;
@@ -195,33 +204,51 @@ html {
 }
 @media (max-width: 425px) {
   .nav {
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 0em;
   }
   .nav__logo {
     font-size: 2.3rem;
   }
+  .nav__logo-img {
+    font-size: 2.8rem;
+  }
   .nav .burger {
     display: flex;
-    height: 6vh;
-    width: 9vw;
+    font-size: 2.8rem;
+  }
+  .header__text {
+    padding-left: 3em;
+  }
+}
+@media (max-width: 375px) {
+  .nav__logo-img {
+    font-size: 2.5rem;
+  }
+  .nav .burger {
+    display: flex;
+    font-size: 2.5rem;
+  }
+  .header__text {
+    padding-left: 2em;
   }
 }
 @media (max-width: 320px) {
   .nav {
-    padding-left: 0.8em;
-    padding-right: 0.8em;
+    padding: 0em;
   }
   .nav__logo {
     font-size: 2.1rem;
     word-spacing: 0;
   }
   .nav__logo-img {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .nav .burger {
-    height: 5vh;
-    width: 9vw;
+    display: flex;
+    font-size: 2.5rem;
+  }
+  .header__text {
+    padding-left: 3em;
   }
   .header__text h1 {
     font-size: 2.5rem;
@@ -233,5 +260,31 @@ html {
   .header__text-btn {
     padding: 6px 18px;
     font-size: 1.8rem;
+  }
+}
+@media (min-width: 2000px) {
+  .header {
+    height: 40vh;
+  }
+  .header__text {
+    margin-top: 14vh;
+  }
+  .header__text h1 {
+    font-size: 5rem;
+  }
+  .header__text p {
+    font-size: 3rem;
+  }
+  .header__text-btn {
+    font-size: 3rem;
+  }
+  .nav__logo {
+    font-size: 4rem;
+  }
+  .nav__logo-img {
+    font-size: 4rem;
+  }
+  .nav__links {
+    font-size: 3.8rem;
   }
 }/*# sourceMappingURL=main.css.map */
