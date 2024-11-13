@@ -33,6 +33,10 @@ html {
 			text-decoration: none;
 			color: black;
 		}
+		&:hover .nav__logo-img {
+			transform: scale(1.15);
+			color: $hover-color;
+		}
 		&-img {
 			color: $dark;
 			font-size: 3.2rem;
@@ -108,41 +112,16 @@ html {
 		display: none;
 		justify-content: space-around;
 		align-items: center;
-		flex-direction: column;
-		width: 4%;
-		height: 110%;
-		border: 2.5px solid $dark;
-		border-radius: 7px;
-		cursor: pointer;
 
-		&__line {
-			width: 75%;
-			height: 10%;
-			background-color: $dark;
-			border-radius: 15px;
-			&-second {
-				width: 50%;
-				height: 10%;
-				background-color: $dark;
-				transition: width ease-in-out 0.4s;
-				border-radius: 15px;
-			}
-			&-third {
-				width: 30%;
-				height: 10%;
-				background-color: $dark;
-				transition: width ease-in-out 0.4s;
-				border-radius: 15px;
-				transition-delay: 0.1s;
-			}
-		}
-		&:hover .burger__line {
-			background-color: $hover-color;
-		}
-		&:hover .burger__line-second,
-		&:hover .burger__line-third {
-			width: 75%;
-			background-color: $hover-color;
+		font-size: 3rem;
+		cursor: pointer;
+		color: $dark;
+		transition: 0.3s ease-in-out;
+
+		&:hover {
+			color: $hover-color;
+			transform: rotate(90deg);
+			transform-origin: center;
 		}
 	}
 }
@@ -185,9 +164,13 @@ html {
 		}
 	}
 }
-// tylko do menu !!!!
+// MEDIA
 @media (max-width: 768px) {
 	.nav {
+		&__logo {
+			font-size: 2.5rem;
+			word-spacing: 0.1em;
+		}
 		padding-left: 2em;
 		padding-right: 2em;
 		&__links {
@@ -195,8 +178,8 @@ html {
 		}
 		.burger {
 			display: flex;
-			height: 160%;
-			width: 7%;
+			height: 6.3vh;
+			width: 6vw;
 		}
 	}
 	.header {
@@ -219,8 +202,56 @@ html {
 		}
 	}
 }
-@media (min-width: 425px) {
+@media (max-width: 425px) {
+	.nav {
+		padding-left: 1em;
+		padding-right: 1em;
+		&__logo {
+			font-size: 2.3rem;
+		}
+
+		.burger {
+			display: flex;
+			height: 6vh;
+			width: 9vw;
+		}
+	}
 }
+@media (max-width: 320px) {
+	.nav {
+		padding-left: 0.8em;
+		padding-right: 0.8em;
+		&__logo {
+			font-size: 2.1rem;
+			word-spacing: 0;
+			&-img {
+				font-size: 2rem;
+			}
+		}
+		.burger {
+			height: 5vh;
+			width: 9vw;
+		}
+	}
+
+	.header {
+		&__text {
+			h1 {
+				font-size: 2.5rem;
+			}
+			p {
+				margin-top: 0.1em;
+				font-size: 2rem;
+			}
+			&-btn {
+				padding: 6px 18px;
+
+				font-size: 1.8rem;
+			}
+		}
+	}
+}
+
 @media (min-width: 992px) {
 }
 @media (min-width: 1440px) {
