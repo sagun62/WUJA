@@ -120,7 +120,6 @@ html {
   transform-origin: center;
 }
 
-@keyframes MobileMenu {}
 .header {
   height: 88vh;
   background-image: url("../img/main-big.jpg");
@@ -128,7 +127,6 @@ html {
   background-size: cover;
 }
 .header__text {
-  padding: 22em 0 0 5em;
   width: 40%;
   color: rgb(241, 240, 240);
 }
@@ -174,7 +172,6 @@ html {
     width: 6vw;
   }
   .header__text {
-    padding: 13em 0 0 3em;
     width: 75%;
   }
   .header__text h1 {
@@ -230,15 +227,5 @@ html {
   .header__text-btn {
     padding: 6px 18px;
     font-size: 1.8rem;
-  }
-}
-@media (min-width: 1440px) {
-  .header {
-    max-height: 46vh;
-  }
-}
-@media (min-width: 2000px) {
-  .header {
-    max-height: 40vh;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -125,8 +125,7 @@ html {
 		}
 	}
 }
-@keyframes MobileMenu {
-}
+
 // HEADER
 .header {
 	height: 88vh;
@@ -135,7 +134,6 @@ html {
 	background-size: cover;
 
 	&__text {
-		padding: 22em 0 0 5em;
 		width: 40%;
 		color: $white-text;
 		h1 {
@@ -184,7 +182,6 @@ html {
 	}
 	.header {
 		&__text {
-			padding: 13em 0 0 3em;
 			width: 75%;
 			h1 {
 				font-size: 3.2rem;
@@ -256,11 +253,9 @@ html {
 }
 @media (min-width: 1440px) {
 	.header {
-		max-height: 46vh;
 	}
 }
 @media (min-width: 2000px) {
 	.header {
-		max-height: 40vh;
 	}
 }
