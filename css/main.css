@@ -234,14 +234,4 @@ html {
     padding: 6px 18px;
     font-size: 1.8rem;
   }
-}
-@media (min-width: 1440px) {
-  .header {
-    height: 46vh;
-  }
-}
-@media (min-width: 2000px) {
-  .header {
-    height: 40vh;
-  }
 }/*# sourceMappingURL=main.css.map */
