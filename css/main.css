@@ -83,20 +83,23 @@ body {
   transform: translateY(-100%);
   background: linear-gradient(159deg, rgb(0, 222, 230) 0%, rgb(82, 223, 228) 22%, rgb(32, 186, 178) 100%);
 }
-.nav__links__mobile a {
-  display: block;
-  text-decoration: none;
+.nav__links__mobile li {
+  width: 60vw;
+  text-align: center;
+  border: 2px solid #003e40;
+  border-radius: 25px;
+  padding: 2px;
   transition: 0.3s;
 }
-.nav__links__mobile a:hover {
-  color: #009499;
-  transform: scale(1.3);
+.nav__links__mobile li:hover {
+  width: 85vw;
+  border: 2px solid #009499;
 }
 .nav__links__mobile .close {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 50px 60px;
+  padding: 20px 20px;
   font-size: 3rem;
   cursor: pointer;
   color: #003e40;
@@ -104,9 +107,21 @@ body {
 }
 .nav__links__mobile .close:hover {
   transform: rotate(360deg);
+  color: #009499;
 }
 .nav__links__mobile-active {
   transform: translateY(0);
+}
+.nav__links__mobile-item {
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  margin-bottom: 5px;
+  font-size: 30px;
+  color: black;
+}
+.nav__links__mobile-item:hover {
+  transform: scale(1.1);
 }
 .nav .burger {
   display: none;
