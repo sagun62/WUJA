@@ -125,9 +125,15 @@ html {
   background-image: url("../img/main-big.jpg");
   background-position: center;
   background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 200px;
 }
 .header__text {
-  width: 40%;
+  padding-left: 6em;
+  margin-top: 20vh;
+  width: 45%;
   color: rgb(241, 240, 240);
 }
 .header__text h1 {
@@ -227,5 +233,15 @@ html {
   .header__text-btn {
     padding: 6px 18px;
     font-size: 1.8rem;
+  }
+}
+@media (min-width: 1440px) {
+  .header {
+    height: 46vh;
+  }
+}
+@media (min-width: 2000px) {
+  .header {
+    height: 40vh;
   }
 }/*# sourceMappingURL=main.css.map */
