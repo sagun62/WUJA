@@ -14,7 +14,7 @@ html {
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body {
-	background-color: white;
+	background-color: $background;
 }
 // NAV
 .nav {
@@ -176,10 +176,11 @@ body {
 		p {
 			margin-top: 0.2em;
 			font-size: 2.5rem;
-			margin-bottom: 0.8em;
+			margin-bottom: 1em;
 		}
 		&-btn {
 			padding: 7px 22px;
+			text-decoration: none;
 			border-radius: 20px;
 			border: none;
 			font-size: 2.5rem;
@@ -192,6 +193,61 @@ body {
 				border-radius: 0px;
 				box-shadow: inset 0 -100px 0 0 $dark;
 			}
+		}
+	}
+}
+
+// MAIN
+.main {
+	background-color: rgb(240, 240, 240);
+}
+.mainOne {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+
+	padding: 3em 3em;
+	&__right {
+		width: 55%;
+		padding-right: 2em;
+		font-size: 2.3rem;
+		color: $dark-text;
+		text-align: justify;
+
+		h1 {
+			margin-bottom: 15px;
+			color: black;
+			font-size: 4rem;
+		}
+		p {
+			margin-bottom: 1em;
+		}
+		&-btn {
+			padding: 7px 22px;
+			border-radius: 20px;
+			text-decoration: none;
+			border: none;
+			font-size: 2.2rem;
+			background-color: $main-color;
+			color: $dark-text;
+			transition: ease-out 0.3s;
+
+			&:hover {
+				color: $white-text;
+				border-radius: 0px;
+				box-shadow: inset 0 -100px 0 0 $dark;
+			}
+		}
+	}
+	&__left {
+		width: 45%;
+
+		img {
+			border-radius: 10px;
+			background-position: center;
+			background-size: cover;
+			width: 100%;
 		}
 	}
 }
@@ -233,6 +289,41 @@ body {
 			}
 		}
 	}
+	.mainOne {
+		&__right {
+			font-size: 2rem;
+			h1 {
+				font-size: 3rem;
+			}
+			&-btn {
+				font-size: 2rem;
+			}
+		}
+	}
+}
+@media (max-width: 700px) {
+	.mainOne {
+		flex-direction: column;
+
+		&__right {
+			width: 100%;
+			font-size: 2rem;
+			order: 1;
+			padding-right: 0;
+			text-align: center;
+			h1 {
+				font-size: 3rem;
+			}
+
+			&-btn {
+				font-size: 2rem;
+			}
+		}
+		&__left {
+			width: 100%;
+			margin-bottom: 5px;
+		}
+	}
 }
 @media (max-width: 425px) {
 	.nav {
@@ -253,6 +344,28 @@ body {
 			padding-left: 3em;
 		}
 	}
+	.mainOne {
+		flex-direction: column;
+
+		&__right {
+			width: 100%;
+			font-size: 2rem;
+			order: 1;
+			padding-right: 0;
+			text-align: center;
+			h1 {
+				font-size: 3rem;
+			}
+
+			&-btn {
+				font-size: 2rem;
+			}
+		}
+		&__left {
+			width: 100%;
+			margin-bottom: 5px;
+		}
+	}
 }
 @media (max-width: 375px) {
 	.nav {
@@ -269,6 +382,19 @@ body {
 	.header {
 		&__text {
 			padding-left: 2em;
+		}
+	}
+	.mainOne {
+		&__right {
+			font-size: 1.8rem;
+
+			h1 {
+				font-size: 2.8rem;
+			}
+
+			&-btn {
+				font-size: 1.8rem;
+			}
 		}
 	}
 }
@@ -338,6 +464,14 @@ body {
 		}
 		&__links {
 			font-size: 3.8rem;
+		}
+	}
+	.mainOne {
+		&__right {
+			font-size: 2.4rem;
+			&-btn {
+				font-size: 2.4rem;
+			}
 		}
 	}
 }
