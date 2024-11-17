@@ -4,6 +4,28 @@
   max-width: 1200px;
 }
 
+.t {
+  width: 20%;
+  height: 6%;
+  border: none;
+  background-color: rgb(240, 240, 240);
+  position: absolute;
+  bottom: -2px;
+  right: -50px;
+  transform: skewX(-60deg);
+}
+
+.d {
+  width: 20%;
+  height: 6%;
+  border: none;
+  background-color: rgb(240, 240, 240);
+  position: absolute;
+  top: -2px;
+  left: -50px;
+  transform: skewX(-60deg);
+}
+
 *,
 ::after,
 ::before {
@@ -19,7 +41,7 @@ html {
 }
 
 body {
-  background-color: rgb(241, 240, 240);
+  background-color: rgb(240, 240, 240);
 }
 
 .nav {
@@ -193,7 +215,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 3em 3em;
+  padding: 3em;
 }
 .mainOne__right {
   width: 55%;
@@ -233,6 +255,34 @@ body {
   background-position: center;
   background-size: cover;
   width: 100%;
+}
+
+.mainTwo {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #00dee6;
+  width: 100%;
+  padding: 8em 3em;
+}
+.mainTwo__elements {
+  text-align: center;
+  width: 100%;
+  font-size: 2.3rem;
+  padding: 1em;
+}
+.mainTwo__elements i {
+  font-size: 7rem;
+  margin-bottom: 0.2em;
+}
+.mainTwo__elements h2 {
+  margin-bottom: 0.2em;
+}
+.mainTwo .wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 @media (max-width: 768px) {

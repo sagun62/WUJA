@@ -206,8 +206,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-
-	padding: 3em 3em;
+	padding: 3em;
 	&__right {
 		width: 55%;
 		padding-right: 2em;
@@ -251,6 +250,35 @@ body {
 		}
 	}
 }
+.mainTwo {
+	overflow: hidden;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	background-color: $main-color;
+	width: 100%;
+	padding: 8em 3em;
+
+	&__elements {
+		text-align: center;
+		width: 100%;
+		font-size: 2.3rem;
+		padding: 1em;
+		i {
+			font-size: 7rem;
+			margin-bottom: 0.2em;
+		}
+		h2 {
+			margin-bottom: 0.2em;
+		}
+	}
+	.wrapper {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
 // MEDIA
 @media (max-width: 768px) {
 	.nav {
