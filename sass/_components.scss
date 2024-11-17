@@ -3,23 +3,23 @@
 	width: 100%;
 	max-width: 1200px;
 }
-.t {
+.decoration-T {
 	width: 20%;
 	height: 6%;
 	border: none;
 	background-color: $background;
 	position: absolute;
-	bottom: -2px;
+	bottom: -4px;
 	right: -50px;
 	transform: skewX(-60deg);
 }
-.d {
+.decoration-D {
 	width: 20%;
 	height: 6%;
 	border: none;
 	background-color: $background;
 	position: absolute;
-	top: -2px;
+	top: -4px;
 	left: -50px;
 	transform: skewX(-60deg);
 }

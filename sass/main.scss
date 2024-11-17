@@ -8,10 +8,11 @@
 	box-sizing: border-box;
 }
 html {
-	font-size: 62.5%;
-
+	font-size: 55%;
+	letter-spacing: 0.02em;
+	word-spacing: 0.05em;
 	scroll-behavior: smooth;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-family: montserrat;
 }
 body {
 	background-color: $background;
@@ -259,6 +260,7 @@ body {
 	background-color: $main-color;
 	width: 100%;
 	padding: 8em 3em;
+	line-height: 1.4;
 
 	&__elements {
 		text-align: center;
@@ -270,7 +272,7 @@ body {
 			margin-bottom: 0.2em;
 		}
 		h2 {
-			margin-bottom: 0.2em;
+			margin-bottom: 0.4em;
 		}
 	}
 	.wrapper {
@@ -326,6 +328,17 @@ body {
 			&-btn {
 				font-size: 2rem;
 			}
+		}
+	}
+	.mainTwo {
+		&__elements {
+			font-size: 2.3rem;
+			h2 {
+				font-size: 3rem;
+			}
+		}
+		.wrapper {
+			flex-direction: column;
 		}
 	}
 }
@@ -423,6 +436,17 @@ body {
 			&-btn {
 				font-size: 1.8rem;
 			}
+		}
+	}
+	.mainTwo {
+		&__elements {
+			font-size: 1.8rem;
+			h2 {
+				font-size: 3rem;
+			}
+		}
+		.wrapper {
+			flex-direction: column;
 		}
 	}
 }
