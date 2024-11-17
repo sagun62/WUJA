@@ -288,6 +288,46 @@ body {
   flex-direction: row;
 }
 
+.mainGallery {
+  padding: 3em;
+  text-align: center;
+}
+.mainGallery h1 {
+  font-size: 4rem;
+  position: relative;
+}
+.mainGallery h1::before {
+  content: "";
+  text-align: center;
+  width: 12%;
+  height: 5px;
+  background-color: #00dee6;
+  position: absolute;
+  top: 1.2em;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mainGallery__box {
+  width: 100%;
+  padding: 4em 0;
+}
+.mainGallery-btn {
+  padding: 7px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  border: none;
+  font-size: 2.2rem;
+  background-color: #00dee6;
+  color: rgb(53, 53, 53);
+  transition: ease-out 0.3s;
+}
+.mainGallery-btn:hover {
+  color: rgb(241, 240, 240);
+  border-radius: 0px;
+  box-shadow: inset 0 -100px 0 0 #003e40;
+}
+
 @media (max-width: 768px) {
   .nav {
     padding: 0em;
