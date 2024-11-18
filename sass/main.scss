@@ -281,7 +281,7 @@ body {
 	}
 }
 .mainGallery {
-	padding: 3em;
+	padding: 3em 3em 5em 3em;
 	text-align: center;
 
 	h1 {
@@ -292,6 +292,7 @@ body {
 			text-align: center;
 			width: 12%;
 			height: 5px;
+			border-radius: 2px;
 			background-color: $main-color;
 			position: absolute;
 			top: 1.2em;
@@ -341,7 +342,103 @@ body {
 		}
 	}
 }
-
+.mainCall {
+	overflow: hidden;
+	padding: 3em 3em 5em 3em;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $main-color;
+	width: 100%;
+	text-align: center;
+	h2 {
+		font-size: 4rem;
+		margin-bottom: 1.5em;
+		position: relative;
+		&::before {
+			content: '';
+			text-align: center;
+			border-radius: 2px;
+			width: 12%;
+			height: 5px;
+			background-color: $white-text;
+			position: absolute;
+			top: 1.2em;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&__btn {
+		padding: 0.8em;
+		border-radius: 2px;
+		text-decoration: none;
+		border: none;
+		font-size: 2.3rem;
+		background-color: $dark;
+		color: $white-text;
+		transition: ease-out 0.8s;
+		margin-right: 0.5em;
+		margin-left: 0.5em;
+		&:hover {
+			color: black;
+			box-shadow: inset 270px 0 0 0 $background;
+		}
+	}
+	.mainCall__btn:hover .shake {
+		animation: shake 0.5s ease-in-out;
+	}
+	.mainCall__btn:hover .move {
+		animation: move 0.8s ease-in-out;
+	}
+	.decoration-D,
+	.decoration-T {
+		height: 16%;
+	}
+	@keyframes shake {
+		0% {
+			transform: rotate(0);
+		}
+		20% {
+			transform: rotate(15deg);
+		}
+		40% {
+			transform: rotate(-15deg);
+		}
+		60% {
+			transform: rotate(15deg);
+		}
+		80% {
+			transform: rotate(-15deg);
+		}
+		100% {
+			transform: rotate(0);
+		}
+	}
+	@keyframes move {
+		0% {
+			transform: translateY(0);
+		}
+		20% {
+			transform: translateY(5px);
+		}
+		40% {
+			transform: translateY(-5px);
+		}
+		60% {
+			transform: translateY(5px);
+		}
+		80% {
+			transform: translateY(-5px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+	.wrapper {
+	}
+}
 // MEDIA
 @media (max-width: 768px) {
 	.nav {
@@ -415,6 +512,28 @@ body {
 			&__once {
 				width: 80%;
 			}
+		}
+	}
+	.mainCall {
+		h2 {
+			position: relative;
+			margin-bottom: 1em;
+			font-size: 3.5rem;
+			&::before {
+				width: 45%;
+			}
+		}
+		&__btn {
+			width: 60%;
+			margin-right: 0;
+			margin-left: 0;
+			margin-bottom: 1em;
+			font-size: 2rem;
+		}
+		.wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 		}
 	}
 }
@@ -498,6 +617,13 @@ body {
 			}
 		}
 		&-btn {
+			font-size: 2rem;
+		}
+	}
+	.mainCall {
+		&__btn {
+			width: 80%;
+			margin-bottom: 1em;
 			font-size: 2rem;
 		}
 	}
