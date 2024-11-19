@@ -8,6 +8,7 @@
 			src="https://kit.fontawesome.com/64d17730cf.js"
 			crossorigin="anonymous"
 		></script>
+		<link rel="stylesheet" href="css/google.css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<!-- css do lightboxa -->
 		<link href="css/lightboxStyle.css" rel="stylesheet" />
@@ -212,7 +213,7 @@
 				<div class="decoration-D"></div>
 				<div class="wrapper">
 					<h2>Contact Us</h2>
-					<a href="#" class="mainCall__btn" onclick="void(0)"
+					<a href="tel:+44123456789" class="mainCall__btn" onclick="void(0)"
 						><i class="fa-solid fa-mobile-screen-button shake"></i
 						>&nbsp;&nbsp;+44 123 456 789</a
 					>
@@ -222,8 +223,39 @@
 					>
 				</div>
 			</section>
-			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+			<section class="review">
+				<h2>Review</h2>
+				<div class="wrapper">
+					<div class="slider-container">
+						<button class="arrow left" onclick="prevSlide()" onclick="void(0)">
+							<i class="fa-solid fa-arrow-left ml3"></i>
+						</button>
+
+						<div class="slider" id="slider">
+							<!-- Recenzje dynamicznie -->
+						</div>
+
+						<button class="arrow right" onclick="nextSlide()" onclick="void(0)">
+							<i class="fa-solid fa-arrow-right ml2"></i>
+						</button>
+					</div>
+					<div class="review__all" id="reviews-summary"></div>
+					<a
+						href="https://www.google.pl/maps/place/modfitbathrooms/@52.8227125,-1.6219786,17z/data=!4m8!3m7!1s0x487a030a98c8066f:0xc9bd5834ff0efa57!8m2!3d52.8227125!4d-1.6194037!9m1!1b1!16s%2Fg%2F11qmcjcd2g?entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D"
+						class="mainGallery-btn"
+						onclick="void(0)"
+						><i class="fa-regular fa-newspaper"></i>&nbsp;&nbsp;More Reviews</a
+					>
+				</div>
+			</section>
 		</main>
+
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGM5Lf6ssnP98R1OWYpLORdwTdVimrEG4&libraries=places&callback=initMap"
+			async
+			defer
+		></script>
+		<script src="./js/google.js" defer></script>
 		<script src="./js/lightbox-jquery.js"></script>
 		<script src="./js/main.js"></script>
 	</body>
