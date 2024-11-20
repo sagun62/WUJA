@@ -519,6 +519,7 @@ body {
   border: none;
   width: 35rem;
   padding: 1em;
+  position: relative;
   background-color: rgb(240, 240, 240);
   color: rgb(53, 53, 53);
   margin-top: 1em;

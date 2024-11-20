@@ -18,4 +18,5 @@ document.addEventListener('DOMContentLoaded', function () {
 	footerBTn.addEventListener('click', () => {
 		window.scrollTo({ top: 0, behavior: 'smooth' });
 	});
+	//
 });
