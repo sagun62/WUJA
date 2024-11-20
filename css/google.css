@@ -116,7 +116,7 @@
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-	z-index: 10;
+	z-index: 9;
 }
 
 .arrow.left {
@@ -188,7 +188,7 @@
 	.read-more {
 		font-size: 12px; /* Mniejszy przycisk "Read more" */
 	}
-	.arrow{
+	.arrow {
 		width: 35px;
 		height: 35px;
 	}
