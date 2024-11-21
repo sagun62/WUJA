@@ -93,6 +93,11 @@ body {
   color: #009499;
   transform: scale(1.2);
 }
+.nav__links .active {
+  color: #003e40;
+  font-weight: bold;
+  border-bottom: 2px solid #003e40;
+}
 .nav__links__mobile {
   display: flex;
   justify-content: space-evenly;

@@ -14,9 +14,15 @@ document.addEventListener('DOMContentLoaded', function () {
 		}, 500);
 	});
 
-	const footerBTn = document.getElementById('footerBTN');
-	footerBTn.addEventListener('click', () => {
-		window.scrollTo({ top: 0, behavior: 'smooth' });
-	});
 	//
+});
+document.addEventListener('DOMContentLoaded', () => {
+	const currentPage = window.location.pathname.split('/').pop(); // Pobierz nazwę bieżącej strony, dzieli po /link i pop() zwraca ostani elemeny czyli nasz href
+	const navLinks = document.querySelectorAll('.nav__links__item');
+
+	navLinks.forEach((link) => {
+		if (link.getAttribute('href') === currentPage) {
+			link.classList.add('active');
+		}
+	});
 });
