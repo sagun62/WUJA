@@ -540,8 +540,19 @@ body {
   color: #003e40;
 }
 .mainEnd__form-file {
+  width: 32rem;
+  padding: 1em;
+  margin-top: 1em;
+  border-radius: 8px;
+  border: 1px solid #00dee6;
   background-color: rgb(240, 240, 240);
-  color: grey;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+.mainEnd__form-file:focus {
+  border: 1px solid #009499;
+  background-color: #d5f6f7;
+  color: #003e40;
 }
 .mainEnd__form-textarea {
   width: 52rem;
