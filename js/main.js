@@ -26,3 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	});
 });
+// na mobile
+document.addEventListener('DOMContentLoaded', () => {
+	const currentPage = window.location.pathname.split('/').pop(); // Pobierz nazwę bieżącej strony, dzieli po /link i pop() zwraca ostani elemeny czyli nasz href
+	const navLinks = document.querySelectorAll('.nav__links__mobile-item');
+
+	navLinks.forEach((link) => {
+		if (link.getAttribute('href') === currentPage) {
+			link.classList.add('active');
+		}
+	});
+});

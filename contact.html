@@ -39,25 +39,145 @@
 
 				<ul class="nav__links__mobile">
 					<i class="fa-solid fa-xmark close" onclick="void(0)"></i>
-					<li><a href="#" class="nav__links__mobile-item">Gallery</a></li>
-					<li><a href="#" class="nav__links__mobile-item">Portfolio</a></li>
-					<li><a href="#" class="nav__links__mobile-item">About Us</a></li>
-					<li><a href="#" class="nav__links__mobile-item">Contact</a></li>
+					<li>
+						<a href="gallery.html" class="nav__links__mobile-item">Gallery</a>
+					</li>
+					<li>
+						<a href="portfolio.html" class="nav__links__mobile-item"
+							>Portfolio</a
+						>
+					</li>
+					<li>
+						<a href="aboutus.html" class="nav__links__mobile-item">About Us</a>
+					</li>
+					<li>
+						<a href="contact.html" class="nav__links__mobile-item">Contact</a>
+					</li>
 				</ul>
 			</div>
 		</nav>
 
-		<header class="header">
+		<header class="header-contact">
+			<div class="shadow"></div>
 			<div class="wrapper">
-				<div class="header__spacer"></div>
-				<div class="header__text">
-					<h1>ModFitBathrooms</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-					<a href="#" class="header__text-btn" onclick="void(0)">Contact us</a>
+				<div class="header-contact__text">
+					<h1>Get in touch</h1>
+					<p>
+						Every project starts with an idea, and every idea starts with a
+						conversation. Fill out the form, call or send a message - we are
+						here to help. Whether you are planning a small interior makeover or
+						a comprehensive renovation, you can count on our experience and
+						commitment. Your comfort and satisfaction are our priority, which is
+						why we will be happy to discuss your needs and propose the best
+						solutions. Let's start working together today!
+					</p>
 				</div>
 			</div>
 		</header>
-		<main class="main"></main>
+		<main class="main">
+			<section class="mainEnd">
+				<div class="contact-spacer-up"></div>
+
+				<div class="decoration-T"></div>
+				<div class="decoration-D"></div>
+				<div class="wrapper">
+					<div class="mainEnd__form">
+						<h1>Let's Build Together</h1>
+						<p>
+							Tell us what you would like to do and we will call you back as
+							soon as possible. Define the scope of work, add a general photo.
+						</p>
+						<form
+							action="bookConsultation.php"
+							method="post"
+							enctype="multipart/form-data"
+						>
+							<input
+								type="text"
+								value=""
+								class="mainEnd__form__input"
+								placeholder="Name"
+							/>
+							<input
+								type="tel"
+								value=""
+								class="mainEnd__form__input"
+								placeholder="Phone"
+							/>
+							<!-- <input type="email" value="" placeholder="Email" /> -->
+							<!-- <input
+								type="file"
+								class="mainEnd__form-file"
+								accept=".jpg, .jpeg, .png, image/*"
+								multiple
+							/> -->
+							<textarea
+								placeholder="Tell us what you would like to do..."
+								class="mainEnd__form-textarea"
+							></textarea>
+
+							<button class="mainEnd__form-button" onclick="void(0)">
+								Send Request &nbsp;<i class="fa-regular fa-paper-plane"></i>
+							</button>
+						</form>
+					</div>
+					<div class="mainEnd__column">
+						<div class="mainEnd__column__us">
+							<p>Why is it worth choosing us?</p>
+							<ul>
+								<li>
+									<i class="fa-solid fa-check"></i>&nbsp;20 years of experience
+								</li>
+								<li>
+									<i class="fa-solid fa-check"></i>&nbsp;Accuracy and
+									conscientiousness
+								</li>
+								<li>
+									<i class="fa-solid fa-check"></i>&nbsp;Quality guarantee
+								</li>
+								<li>
+									<i class="fa-solid fa-check"></i>&nbsp;Professional team
+								</li>
+							</ul>
+						</div>
+						<div class="mainEnd__column__workTime">
+							<p>Our team is working daily from:</p>
+							<table>
+								<tbody>
+									<tr>
+										<td class="mainEnd__column__workTime-left">
+											Monday-Friday
+										</td>
+										<td></td>
+										<td class="mainEnd__column__workTime-right">9am–16pm</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mainCalll">
+				<div class="wrapper">
+					<h2>Contact Us</h2>
+					<a href="tel:+44123456789" class="mainCalll__btn" onclick="void(0)"
+						><i class="fa-solid fa-mobile-screen-button shake"></i>&nbsp;+44
+						07715 058 294</a
+					>
+					<a href="#" class="mainCalll__btn" onclick="void(0)"
+						><i class="fa-regular fa-envelope move"></i>&nbsp;Send Messege</a
+					>
+					<a
+						href="https://wa.me/4407715058294?text=Hello!%20I%20am%20interested%20in%20your%20services."
+						target="_blank"
+						class="mainCalll__btn"
+						onclick="void(0)"
+					>
+						<i class="fa-brands fa-whatsapp shake"></i>&nbsp;WhatsApp
+					</a>
+				</div>
+			</section>
+		</main>
 		<footer class="footer">
 			<div class="wrapper">
 				<div class="footer__up">

@@ -39,10 +39,20 @@
 
 				<ul class="nav__links__mobile">
 					<i class="fa-solid fa-xmark close" onclick="void(0)"></i>
-					<li><a href="#" class="nav__links__mobile-item">Gallery</a></li>
-					<li><a href="#" class="nav__links__mobile-item">Portfolio</a></li>
-					<li><a href="#" class="nav__links__mobile-item">About Us</a></li>
-					<li><a href="#" class="nav__links__mobile-item">Contact</a></li>
+					<li>
+						<a href="gallery.html" class="nav__links__mobile-item">Gallery</a>
+					</li>
+					<li>
+						<a href="portfolio.html" class="nav__links__mobile-item"
+							>Portfolio</a
+						>
+					</li>
+					<li>
+						<a href="aboutus.html" class="nav__links__mobile-item">About Us</a>
+					</li>
+					<li>
+						<a href="contact.html" class="nav__links__mobile-item">Contact</a>
+					</li>
 				</ul>
 			</div>
 		</nav>
@@ -210,8 +220,8 @@
 				<div class="wrapper">
 					<h2>Contact Us</h2>
 					<a href="tel:+44123456789" class="mainCall__btn" onclick="void(0)"
-						><i class="fa-solid fa-mobile-screen-button shake"></i>&nbsp;+44 123
-						456 789</a
+						><i class="fa-solid fa-mobile-screen-button shake"></i>&nbsp;+44
+						07715 058 294</a
 					>
 					<a href="#" class="mainCall__btn" onclick="void(0)"
 						><i class="fa-regular fa-envelope move"></i>&nbsp;Send Messege</a
@@ -266,15 +276,30 @@
 							method="post"
 							enctype="multipart/form-data"
 						>
-							<input type="text" value="" placeholder="Name" />
-							<input type="tel" value="" placeholder="Phone" />
-							<input type="email" value="" placeholder="Email" />
 							<input
+								type="text"
+								value=""
+								class="mainEnd__form__input"
+								placeholder="Name"
+							/>
+							<input
+								type="tel"
+								value=""
+								class="mainEnd__form__input"
+								placeholder="Phone"
+							/>
+							<!-- <input type="email" value="" placeholder="Email" /> -->
+							<!-- <input
 								type="file"
 								class="mainEnd__form-file"
 								accept=".jpg, .jpeg, .png, image/*"
 								multiple
-							/>
+							/> -->
+							<textarea
+								placeholder="Tell us what you would like to do..."
+								class="mainEnd__form-textarea"
+							></textarea>
+
 							<button class="mainEnd__form-button" onclick="void(0)">
 								Send Request &nbsp;<i class="fa-regular fa-paper-plane"></i>
 							</button>
