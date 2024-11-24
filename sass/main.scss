@@ -30,7 +30,7 @@ body {
 	padding: 1em;
 
 	&__logo {
-		font-size: 2.8rem;
+		font-size: 2.7rem;
 		word-spacing: 0.2em;
 		letter-spacing: 0.1em;
 		cursor: pointer;
@@ -701,6 +701,7 @@ body {
 			font-family: Verdana, Geneva, Tahoma, sans-serif;
 			margin-bottom: 1.3em;
 			position: relative;
+
 			&::before {
 				content: '';
 				text-align: center;
@@ -727,11 +728,11 @@ body {
 	}
 }
 // main
-.mainEnd {
-	.decoration-D {
-		height: 10%;
-	}
-}
+// .mainEnd {
+// 	.decoration-D {
+// 		height: 10%;
+// 	}
+// }
 .mainCalll {
 	overflow: hidden;
 	padding: 3em 3em 5em 3em;
@@ -739,8 +740,9 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: $background;
+
 	width: 100%;
+	//
 	text-align: center;
 	h2 {
 		font-size: 4rem;
@@ -938,6 +940,28 @@ body {
 			align-items: center;
 		}
 	}
+	.mainCalll {
+		h2 {
+			position: relative;
+			margin-bottom: 1em;
+			font-size: 3.5rem;
+			&::before {
+				width: 45%;
+			}
+		}
+		&__btn {
+			width: 60%;
+			margin-right: 0;
+			margin-left: 0;
+			margin-bottom: 1em;
+			font-size: 2rem;
+		}
+		.wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
 	.mainEnd {
 		text-align: center;
 		&__form {
@@ -1082,6 +1106,13 @@ body {
 			font-size: 2rem;
 		}
 	}
+	.mainCalll {
+		&__btn {
+			width: 80%;
+			margin-bottom: 1em;
+			font-size: 2rem;
+		}
+	}
 	.mainEnd {
 		text-align: center;
 		&__form {
@@ -1103,6 +1134,13 @@ body {
 			align-items: center;
 			a {
 				margin-bottom: 1em;
+			}
+		}
+	}
+	.header-contact {
+		&__text {
+			h1 {
+				font-size: 3.9rem;
 			}
 		}
 	}
@@ -1184,6 +1222,13 @@ body {
 				padding: 6px 18px;
 
 				font-size: 1.8rem;
+			}
+		}
+	}
+	.header-contact {
+		&__text {
+			h1 {
+				font-size: 3.5rem;
 			}
 		}
 	}

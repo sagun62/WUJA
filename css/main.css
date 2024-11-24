@@ -76,7 +76,7 @@ body {
   padding: 1em;
 }
 .nav__logo {
-  font-size: 2.8rem;
+  font-size: 2.7rem;
   word-spacing: 0.2em;
   letter-spacing: 0.1em;
   cursor: pointer;
@@ -726,10 +726,6 @@ body {
   height: 100%;
 }
 
-.mainEnd .decoration-D {
-  height: 10%;
-}
-
 .mainCalll {
   overflow: hidden;
   padding: 3em 3em 5em 3em;
@@ -737,7 +733,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(240, 240, 240);
   width: 100%;
   text-align: center;
 }
@@ -912,6 +907,26 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  .mainCalll h2 {
+    position: relative;
+    margin-bottom: 1em;
+    font-size: 3.5rem;
+  }
+  .mainCalll h2::before {
+    width: 45%;
+  }
+  .mainCalll__btn {
+    width: 60%;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 1em;
+    font-size: 2rem;
+  }
+  .mainCalll .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .mainEnd {
     text-align: center;
   }
@@ -1041,6 +1056,11 @@ body {
     margin-bottom: 1em;
     font-size: 2rem;
   }
+  .mainCalll__btn {
+    width: 80%;
+    margin-bottom: 1em;
+    font-size: 2rem;
+  }
   .mainEnd {
     text-align: center;
   }
@@ -1060,6 +1080,9 @@ body {
   }
   .footer__up a {
     margin-bottom: 1em;
+  }
+  .header-contact__text h1 {
+    font-size: 3.9rem;
   }
 }
 @media (max-width: 375px) {
@@ -1123,6 +1146,9 @@ body {
   .header__text-btn {
     padding: 6px 18px;
     font-size: 1.8rem;
+  }
+  .header-contact__text h1 {
+    font-size: 3.5rem;
   }
 }
 @media (min-width: 2000px) {
