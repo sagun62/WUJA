@@ -36,4 +36,20 @@ document.addEventListener('DOMContentLoaded', () => {
 			link.classList.add('active');
 		}
 	});
+	// odslaniacz w portfolio
 });
+function toggleAccordion(index) {
+	const items = document.querySelectorAll('.portfolio__box__content');
+
+	items.forEach((item, i) => {
+		if (i === index) {
+			// Rozwijaj/zwiń klikniętą sekcję
+			item.style.maxHeight = item.style.maxHeight
+				? null
+				: item.scrollHeight + 'px';
+		} else {
+			// Ukryj pozostałe sekcje
+			item.style.maxHeight = null;
+		}
+	});
+}

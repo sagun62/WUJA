@@ -322,7 +322,7 @@ body {
 		border-radius: 6px;
 		padding: 3em 0;
 		// border: 2px dotted $dark-text;
-		box-shadow: 0 0 5px 2px $hover-color;
+		box-shadow: 0 0 15px 1px $dark-text;
 		&__once {
 			overflow: hidden;
 			width: 30%;
@@ -897,7 +897,7 @@ body {
 		flex-wrap: wrap;
 		padding: 3em 0;
 		border-radius: 10px;
-		box-shadow: 0 0 15px 3px rgba(0, 148, 153, 0.9);
+		box-shadow: 0 0 15px 1px $dark-text;
 
 		&__once {
 			overflow: hidden;
@@ -905,7 +905,6 @@ body {
 
 			padding: 1em;
 			&__foto {
-				border: 2px solid rgba(0, 148, 153, 0.7);
 				border-radius: 12px;
 				cursor: pointer;
 				object-fit: cover;
@@ -953,14 +952,14 @@ body {
 		text-decoration: none;
 		border: none;
 		font-size: 2.3rem;
-		background-color: $hover-color;
+		background-color: $dark;
 		color: $white-text;
 		transition: ease-in-out 0.8s;
 		margin-right: 0.5em;
 		margin-left: 0.5em;
 		&:hover {
 			color: black;
-			box-shadow: inset 270px 0 0 0 $main-color;
+			box-shadow: inset 270px 0 0 0 $hover-color2;
 		}
 	}
 	.mainCalll__btn:hover .shake {
@@ -1014,21 +1013,131 @@ body {
 		}
 	}
 }
+// .galleryAll {
+// 	padding: 3em 3em 5em 3em;
+// 	text-align: center;
 
-// MEDIA
-// @media (max-width: 991px) {
-// 	.mainEnd {
-// 		text-align: center;
-// 		&__form {
-// 			form {
-// 				textarea {
-// 					width: 35rem;
-// 					margin-right: 0.5em;
+// 	&__box {
+// 		margin: auto;
+// 		width: 100%;
+// 		display: flex;
+// 		justify-content: center;
+// 		align-items: center;
+// 		flex-wrap: wrap;
+// 		padding: 3em 0;
+// 		border-radius: 10px;
+// 		box-shadow: 0 0 15px 3px rgba(0, 148, 153, 0.9);
+
+// 		&__once {
+// 			overflow: hidden;
+// 			width: 30%;
+
+// 			padding: 1em;
+// 			&__foto {
+// 				border: 2px solid rgba(0, 148, 153, 0.7);
+// 				border-radius: 12px;
+// 				cursor: pointer;
+// 				object-fit: cover;
+// 				width: 100%;
+// 				transition: 0.3s ease-in-out;
+// 				&:hover {
+// 					transform: scale(0.93);
 // 				}
 // 			}
 // 		}
 // 	}
 // }
+// PORTFOLIO PAGE
+.portfolio {
+	width: 100%;
+	background-color: $main-color;
+	font-size: 2.5rem;
+	text-align: center;
+	position: relative;
+	padding: 1em;
+	color: $white-text;
+	&__box {
+		width: 100%;
+		background-color: $dark;
+		border-radius: 6px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 1em;
+		margin-top: 1em;
+
+		&__content {
+			background-color: $background;
+			overflow: hidden;
+			transition: max-height 0.3s ease-in-out;
+			max-height: 0;
+			color: $dark-text;
+			border-bottom-left-radius: 6px;
+			border-bottom-right-radius: 6px;
+			&__gallery {
+				margin: auto;
+				width: 100%;
+				background-color: $background;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: wrap;
+				&__once {
+					overflow: hidden;
+					width: 30%;
+					padding: 1em;
+					&__foto {
+						border-radius: 12px;
+						cursor: pointer;
+						object-fit: cover;
+						width: 100%;
+						transition: 0.3s ease-in-out;
+						&:hover {
+							transform: scale(0.93);
+						}
+					}
+				}
+			}
+		}
+		&-btn {
+			padding: 0.8em;
+			text-decoration: none;
+			border: none;
+			width: 5rem;
+			cursor: pointer;
+			font-size: 2rem;
+			background: none;
+			color: $white-text;
+			transition: ease-in-out 0.8s;
+			&:hover {
+				animation: UD 1.5s infinite;
+				color: $hover-color;
+			}
+		}
+	}
+	@keyframes UD {
+		0% {
+			transform: translateY(0);
+		}
+		20% {
+			transform: translateY(5px);
+		}
+		40% {
+			transform: translateY(-5px);
+		}
+		60% {
+			transform: translateY(5px);
+		}
+		80% {
+			transform: translateY(-5px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+}
+
 @media (max-width: 768px) {
 	.nav {
 		padding: 0em;
