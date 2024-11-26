@@ -344,12 +344,16 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 2em;
+  border-radius: 6px;
   padding: 3em 0;
+  box-shadow: 0 0 5px 2px #009499;
 }
 .mainGallery__box__once {
   overflow: hidden;
   width: 30%;
-  padding: 0.5em;
+  margin: 1em;
+  border-radius: 12px;
 }
 .mainGallery__box__once__foto {
   cursor: pointer;
@@ -366,6 +370,7 @@ body {
   border-radius: 20px;
   text-decoration: none;
   border: none;
+  margin-top: 1em;
   font-size: 2.2rem;
   background-color: #00dee6;
   color: rgb(53, 53, 53);
@@ -822,7 +827,7 @@ body {
 }
 
 .gallery-contact {
-  background-image: url("../img/galleryBox/premium-4/10777B.png");
+  background-image: url("../img/galleryBox/premium-4/10777MM.png");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -878,7 +883,8 @@ body {
   align-items: center;
   flex-wrap: wrap;
   padding: 3em 0;
-  background-color: #00dee6;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 3px rgba(0, 148, 153, 0.9);
 }
 .galleryAll__box__once {
   overflow: hidden;
@@ -886,7 +892,7 @@ body {
   padding: 1em;
 }
 .galleryAll__box__once__foto {
-  border: 2px solid rgb(240, 240, 240);
+  border: 2px solid rgba(0, 148, 153, 0.7);
   border-radius: 12px;
   cursor: pointer;
   -o-object-fit: cover;
@@ -1066,7 +1072,7 @@ body {
     flex-direction: column;
   }
   .galleryAll__box__once {
-    width: 60%;
+    width: 80%;
   }
   .mainCall h2 {
     position: relative;

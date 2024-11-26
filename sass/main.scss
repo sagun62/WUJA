@@ -318,11 +318,17 @@ body {
 		justify-content: center;
 		align-items: center;
 		flex-wrap: wrap;
+		margin-top: 2em;
+		border-radius: 6px;
 		padding: 3em 0;
+		// border: 2px dotted $dark-text;
+		box-shadow: 0 0 5px 2px $hover-color;
 		&__once {
 			overflow: hidden;
 			width: 30%;
-			padding: 0.5em;
+			margin: 1em;
+
+			border-radius: 12px;
 			&__foto {
 				cursor: pointer;
 				object-fit: cover;
@@ -340,6 +346,7 @@ body {
 		border-radius: 20px;
 		text-decoration: none;
 		border: none;
+		margin-top: 1em;
 		font-size: 2.2rem;
 		background-color: $main-color;
 		color: $dark-text;
@@ -832,7 +839,7 @@ body {
 // GALLERY PAGE
 
 .gallery-contact {
-	background-image: url('../img/galleryBox/premium-4/10777B.png');
+	background-image: url('../img/galleryBox/premium-4/10777MM.png');
 	background-position: center;
 	background-size: cover;
 	position: relative;
@@ -889,14 +896,16 @@ body {
 		align-items: center;
 		flex-wrap: wrap;
 		padding: 3em 0;
-		background-color: $main-color;
+		border-radius: 10px;
+		box-shadow: 0 0 15px 3px rgba(0, 148, 153, 0.9);
+
 		&__once {
 			overflow: hidden;
 			width: 30%;
 
 			padding: 1em;
 			&__foto {
-				border: 2px solid $background;
+				border: 2px solid rgba(0, 148, 153, 0.7);
 				border-radius: 12px;
 				cursor: pointer;
 				object-fit: cover;
@@ -1099,7 +1108,7 @@ body {
 		&__box {
 			flex-direction: column;
 			&__once {
-				width: 60%;
+				width: 80%;
 			}
 		}
 	}
