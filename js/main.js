@@ -36,4 +36,15 @@ document.addEventListener('DOMContentLoaded', () => {
 			link.classList.add('active');
 		}
 	});
+	function reloadCSS() {
+		const links = document.querySelectorAll('link[rel="stylesheet"]');
+		links.forEach((link) => {
+			const href = link.getAttribute('href');
+			link.setAttribute(
+				'href',
+				href.split('?')[0] + '?v=' + new Date().getTime()
+			);
+		});
+	}
+	reloadCSS();
 });
