@@ -883,7 +883,7 @@ body {
 .galleryAll__box__once {
   overflow: hidden;
   width: 30%;
-  padding: 0.5em;
+  padding: 1em;
 }
 .galleryAll__box__once__foto {
   border: 2px solid rgb(240, 240, 240);
@@ -1066,7 +1066,7 @@ body {
     flex-direction: column;
   }
   .galleryAll__box__once {
-    width: 80%;
+    width: 60%;
   }
   .mainCall h2 {
     position: relative;

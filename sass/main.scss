@@ -894,7 +894,7 @@ body {
 			overflow: hidden;
 			width: 30%;
 
-			padding: 0.5em;
+			padding: 1em;
 			&__foto {
 				border: 2px solid $background;
 				border-radius: 12px;
@@ -1099,7 +1099,7 @@ body {
 		&__box {
 			flex-direction: column;
 			&__once {
-				width: 80%;
+				width: 60%;
 			}
 		}
 	}
