@@ -998,6 +998,51 @@ body {
   }
 }
 
+.portfolio-contact {
+  background-image: url("../img/portfoliobg.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.portfolio-contact__text {
+  padding: 3em 3em 3.2em 3em;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.7em;
+  z-index: 2;
+  color: rgb(237, 232, 232);
+  position: relative;
+}
+.portfolio-contact__text h1 {
+  font-size: 5.5rem;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 1.3em;
+  position: relative;
+}
+.portfolio-contact__text h1::before {
+  content: "";
+  text-align: center;
+  width: 20%;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #00dee6;
+  position: absolute;
+  top: 1.2em;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.portfolio-contact .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
 .portfolio {
   width: 100%;
   background-color: #00dee6;
@@ -1011,21 +1056,37 @@ body {
   width: 100%;
   background-color: #003e40;
   border-radius: 6px;
+  border: 3.5px solid #003e40;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 0.5em;
   margin-bottom: 1em;
   margin-top: 1em;
+}
+.portfolio__box p {
+  font-size: 2.4rem;
 }
 .portfolio__box__content {
   background-color: rgb(240, 240, 240);
   overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
   max-height: 0;
+  position: relative;
   color: rgb(53, 53, 53);
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+}
+.portfolio__box__content::before {
+  content: "";
+  width: 100%;
+  height: 1.5rem;
+  position: absolute;
+  background-color: #003e40;
+  bottom: 0;
+  left: 0;
+}
+.portfolio__box__content p {
+  padding: 0 0.5em 2em 0.5em;
 }
 .portfolio__box__content__gallery {
   margin: auto;
@@ -1162,6 +1223,12 @@ body {
   }
   .galleryAll__box__once {
     width: 80%;
+  }
+  .portfolio__box__content p {
+    font-size: 2.3rem;
+  }
+  .portfolio__box__content__gallery__once {
+    width: 50%;
   }
   .mainCall h2 {
     position: relative;
@@ -1333,6 +1400,12 @@ body {
   .galleryAll__box__once {
     width: 70%;
   }
+  .portfolio__box__content p {
+    font-size: 2.1rem;
+  }
+  .portfolio__box__content__gallery__once {
+    width: 70%;
+  }
   .mainCall__btn {
     width: 80%;
     margin-bottom: 1em;
@@ -1399,6 +1472,12 @@ body {
   .footer {
     text-align: center;
   }
+  .portfolio__box__content p {
+    font-size: 2.1rem;
+  }
+  .portfolio__box__content__gallery__once {
+    width: 75%;
+  }
 }
 @media (max-width: 320px) {
   .nav {
@@ -1431,6 +1510,12 @@ body {
   }
   .header-contact__text h1 {
     font-size: 3.5rem;
+  }
+  .portfolio__box__content p {
+    font-size: 2rem;
+  }
+  .portfolio__box__content__gallery__once {
+    width: 85%;
   }
 }
 @media (min-width: 2000px) {
