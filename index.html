@@ -61,11 +61,16 @@
 		</nav>
 
 		<header class="header">
+			<div class="shadow"></div>
 			<div class="wrapper">
 				<div class="header__spacer"></div>
 				<div class="header__text">
 					<h1>ModFitBathrooms</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam iste
+						itaque consequatur doloremque, consectetur nam quibusdam facilis
+						odit ipsum fugit.
+					</p>
 					<a href="contact.html" class="header__text-btn" onclick="void(0)"
 						>Contact us</a
 					>
@@ -274,11 +279,11 @@
 						<h1>Let's Build Together</h1>
 						<p>
 							Tell us what you would like to do and we will call you back as
-							soon as possible. Define the scope of work, add a general photo.
+							soon as possible. Define the scope of work, add a general photos.
 						</p>
 						<form
 							action="bookConsultation.php"
-							method="post"
+							method="POST"
 							enctype="multipart/form-data"
 						>
 							<input
@@ -286,26 +291,40 @@
 								value=""
 								class="mainEnd__form__input"
 								placeholder="Name"
+								name="name"
+								required
 							/>
 							<input
-								type="tel"
+								type="number"
+								pattern="[0-9]{10}{+}"
 								value=""
 								class="mainEnd__form__input"
 								placeholder="Phone"
+								name="phone"
+								required
 							/>
+
 							<!-- <input type="email" value="" placeholder="Email" /> -->
 							<input
 								type="file"
 								class="mainEnd__form-file"
 								accept=".jpg, .jpeg, .png, image/*"
+								id="files"
+								name="files[]"
 								multiple
 							/>
 							<textarea
 								placeholder="Tell us what you would like to do..."
 								class="mainEnd__form-textarea"
+								name="text"
+								required
 							></textarea>
 
-							<button class="mainEnd__form-button" onclick="void(0)">
+							<button
+								type="submit"
+								class="mainEnd__form-button"
+								onclick="void(0)"
+							>
 								Send Request &nbsp;<i class="fa-regular fa-paper-plane"></i>
 							</button>
 						</form>
