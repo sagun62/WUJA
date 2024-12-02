@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .wrapper {
   margin: 0 auto;
   width: 100%;
@@ -229,7 +230,7 @@ body {
   border: none;
   font-size: 2.5rem;
   background-color: #00dee6;
-  color: rgb(241, 240, 240);
+  color: rgb(53, 53, 53);
   transition: ease-out 0.3s;
   z-index: 20;
 }
@@ -266,12 +267,20 @@ body {
   color: rgb(53, 53, 53);
   text-align: justify;
 }
+.mainOne__right ul {
+  list-style-type: none; /* Usuwa domyślne kropki */
+  padding-left: 0; /* Opcjonalnie usuwa wcięcie */
+}
+.mainOne__right ul i {
+  color: #009499;
+}
 .mainOne__right h1 {
   margin-bottom: 15px;
   color: black;
   font-size: 4rem;
 }
 .mainOne__right p {
+  margin-top: 0.5em;
   margin-bottom: 1em;
 }
 .mainOne__right-btn {

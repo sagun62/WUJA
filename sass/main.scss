@@ -197,7 +197,7 @@ body {
 			border: none;
 			font-size: 2.5rem;
 			background-color: $main-color;
-			color: $white-text;
+			color: $dark-text;
 			transition: ease-out 0.3s;
 			z-index: 20;
 			&:hover {
@@ -234,13 +234,20 @@ body {
 		font-size: 2.3rem;
 		color: $dark-text;
 		text-align: justify;
-
+		ul {
+			list-style-type: none; /* Usuwa domyślne kropki */
+			padding-left: 0; /* Opcjonalnie usuwa wcięcie */
+			i {
+				color: $hover-color;
+			}
+		}
 		h1 {
 			margin-bottom: 15px;
 			color: black;
 			font-size: 4rem;
 		}
 		p {
+			margin-top: 0.5em;
 			margin-bottom: 1em;
 		}
 		&-btn {
