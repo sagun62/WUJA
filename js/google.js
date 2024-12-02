@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 						<div class="stars">${stars}</div>
 						<p>${review.text}</p>
 						<small>${new Date(review.time * 1000).toLocaleDateString()}</small>
-						<a href="https://www.google.com/maps/place/?q=place_id:${placeId}" 
+						<a href="https://maps.google.com/?q=place_id:ChIJbwbImAoDekgRV_oO_zRYvck" 
 							class="read-more" 
 							target="_blank">Full Review &nbsp;<i class="fa-solid fa-arrow-right ml"></i>
 						</a>
