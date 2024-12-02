@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 						<div class="stars">${stars}</div>
 						<p>${review.text}</p>
 						<small>${new Date(review.time * 1000).toLocaleDateString()}</small>
-						<a href="https://maps.app.goo.gl/?link=https://www.google.com/maps/place/?q=place_id:ChIJbwbImAoDekgRV_oO_zRYvck" 
+						<a href="https://www.google.pl/maps/place/modfitbathrooms/@52.8227125,-1.6219786,17z/data=!4m8!3m7!1s0x487a030a98c8066f:0xc9bd5834ff0efa57!8m2!3d52.8227125!4d-1.6194037!9m1!1b1!16s%2Fg%2F11qmcjcd2g?entry=ttu&g_ep=EgoyMDI0MTExNy4wIKXMDSoASAFQAw%3D%3D"
 							class="read-more" 
 							target="_blank">Full Review &nbsp;<i class="fa-solid fa-arrow-right ml"></i>
 						</a>
