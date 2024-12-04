@@ -62,9 +62,8 @@
 			<div class="shadow"></div>
 			<div class="wrapper">
 				<div class="portfolio-contact__text">
-					<h2 style="font-size: 4rem; line-height: 1.5">
-						Thank you for reaching out! We will get back to you as soon as
-						possible.
+					<h2 id="h2" style="font-size: 4rem; line-height: 1.5">
+					fff
 					</h2>
 				</div>
 			</div>
@@ -75,8 +74,8 @@
 			
 			<?php
 // Wyłączenie wyświetlania błędów na stronie
-// ini_set('display_errors', '0'); 
-// ini_set('log_errors', '1');
+ini_set('display_errors', '0'); 
+ini_set('log_errors', '1');
 
 // Wczytanie PHPMailer
 require 'vendor/autoload.php';
@@ -121,9 +120,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
       
        
     } else {
+		echo "";
         echo "<p><strong>No files uploaded, or file size too large.</strong></p>";
         echo "<p style='font-size:2rem'><strong>Max 3 photos</strong></p>";
         echo "<a href='index.html' class='mainCall__btn'><i class='fa-solid fa-house'></i>&nbsp;Home Page</a>";
+		exit();
     }
 
     // Konfiguracja PHPMailer
